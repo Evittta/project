@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evita Kusinya</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 <body>
-    <header id="home">
-        <nav>
+    <section id="bodyx">
+    <header>
+        <nav id="horizontal-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About me</a></li>
@@ -17,14 +19,15 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <img src="img/bg-flower.png" alt="pink rose in hand" width="900" height="500">
-        <h1>Evita Kusinya</h1>
-        <p>Student at SoftServe IT Academy</p>
     </header>
     <main>
+        <section id="home">
+            <h1 id="text-type"></h1>
+            <p>Student at SoftServe IT Academy</p>
+        </section>
         <section id="about-me">
             <h2>About me</h2>
-            <img src="img/evita-kusinya.png" alt="photo of Evita in nature" width="900" height="500">
+            <img src="img/evita-kusinya.png" alt="photo of Evita in nature">
             <p>
                 I’m Evita.I’m a student of Softserve IT University. I’m  living in Lviv now, but I'm from Ternopil. 
                 I am a fan of programming. I’m also interested in running and cooking.
@@ -35,19 +38,15 @@
             <p>
                 Computer Science, Lviv Polytechnic University, 2014 – 2018. 
             </p>
-            <img src="img/laptop.jpg" alt="black laptop" width="900" height="500">
         </section>
         <section id="scills">
             <h2>Scills</h2>
-            <img src="img/html-logo.png" alt="logo html">
-            <img src="img/js-logo.png" alt="logo javascript">
-            <img src="img/css-logo.png" alt="logo css">
+            <img src="img/scills.png" alt="logo html">
         </section>
     </main>
     <footer>
         <section id="contact">
             <h2>Contacts</h2>
-            <img src="img/laptop-code.png" alt="code on the laptop screen" width="900" height="500">
             <p>Send me message</p>
             <form method="POST" action="https://formspree.io/vita.kusinya@gmail.com">
                 <input type="text" name="client-name" placeholder="Name"/>
@@ -57,16 +56,17 @@
                 <textarea name="client-message" cols="80" rows="10" placeholder="Input your message"></textarea>
                 <br>
                 <input type="submit" value="Send now"/>
+                <br><br><br>
             </form>
             <nav id="links">
                 <a href="https://www.facebook.com/profile.php?id=100013901568794">
-                    <img src="img/fb-logo.png" alt="Evita in Facebook" width="50" height="50"></a>
+                    <img src="img/fb-logo.png" alt="Evita in Facebook"></a>
                 <a href="https://www.instagram.com/vita.kusinya/">
-                    <img src="img/instagram-logo.png" alt="Evita in Instagram" width="50" height="50"></a>
-                <a href="https://plus.google.com/u/0/114200827200799466295">
-                    <img src="img/google-logo.png" alt="Evita in Google+" width="50" height="50"></a>
+                    <img src="img/instagram-logo.png" alt="Evita in Instagram"></a>
             </nav>
         </section>
     </footer>
+    </section>
+    <script src="js/text-typing.js"></script>
 </body>
 </html>
