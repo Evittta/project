@@ -1,5 +1,3 @@
-$('#page-loaded').html( (new Date).toLocaleTimeString() );
-
 $('form input[type="submit"]').click(sendForm);
 
 function sendForm(e) {
@@ -20,7 +18,7 @@ function sendForm(e) {
         $('#msg').html('Thank you!'); 
     })
     .fail(function(){
-        $('msg').html('Sorry. there is an error!');
+        $('#msg').html('Sorry, there is an error!');
     });
 } 
 
