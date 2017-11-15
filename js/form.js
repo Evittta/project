@@ -15,13 +15,13 @@ function sendForm(e) {
     })
     .done(function(){
         $('form')[0].reset();
-        $('#msg').html('Thank you!'); 
+        $('#msg').html('Thank you!');
+        setTimeout(function() {
+            $('#msg').fadeOut('fast')
+        },5000);
     })
     .fail(function(){
         $('#msg').html('Sorry, there is an error!');
     });
 } 
 
-setTimeout(function() {
-    $('#msg').fadeOut('fast')
-},30000);
