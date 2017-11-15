@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 <body>
-    <section id="bodyx">
     <header>
-        <nav id="horizontal-menu">
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#scills">Scills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -39,25 +38,27 @@
                 Computer Science, Lviv Polytechnic University, 2014 – 2018. 
             </p>
         </section>
-        <section id="scills">
-            <h2>Scills</h2>
-            <img src="img/scills.png" alt="logo html">
+        <section id="skills">
+            <h2>Skills</h2>
+            <img src="img/skills.png" alt="logo html">
         </section>
     </main>
     <footer>
         <section id="contact">
             <h2>Contacts</h2>
             <p>Send me message</p>
-            <form method="POST" action="https://formspree.io/vita.kusinya@gmail.com">
-                <input type="text" name="client-name" placeholder="Name"/>
-                <input type="email" name="client-email" placeholder="Email Address" required/>
-                <input type="text" name="message-subject" placeholder="Subject"/>
+            <form>
+                <input type="text" id="name" placeholder="Name"/>
+                <input type="email" id="email" placeholder="Email Address" required/>
+                <input type="text" id="message-subject" placeholder="Subject"/>
                 <br>
-                <textarea name="client-message" cols="80" rows="10" placeholder="Input your message"></textarea>
+                <textarea id="client-message" cols="80" rows="10" placeholder="Input your message"></textarea>
                 <br>
-                <input type="submit" value="Send now"/>
-                <br><br><br>
+                <input type="submit" value="Send now" id="btn"/>
+                <br>
             </form>
+            <div id="msg"></div>
+            <br><br>
             <nav id="links">
                 <a href="https://www.facebook.com/profile.php?id=100013901568794">
                     <img src="img/fb-logo.png" alt="Evita in Facebook"></a>
@@ -66,7 +67,11 @@
             </nav>
         </section>
     </footer>
-    </section>
+    <script 
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
     <script src="js/text-typing.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
