@@ -1,48 +1,44 @@
-body {
+main.container {
     max-width: 900px;
-    margin: auto;
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: right;
-    background-color: black;
+.navbar-dark .navbar-nav a.nav-link {
+    color: white;
+    font-size: 20px;
 }
 
-ul li {
-    display: inline-block;
-    padding: 18px 10px;
+#home {
+    color: white;
 }
 
-header a {
+.navbar-dark .navbar-nav a.nav-link a {
   text-decoration: none;
   font-size: 23px;
 }
 
-header a:link {
+.navbar-dark .navbar-nav a.nav-link:link {
 	color: #fff;
 }
 
-header a:visited {
+.navbar-dark .navbar-nav a.nav-link:visited {
 	color: #fefac0;
-	background-color: #000;
 }
 
-header a:focus {
+.navbar-dark .navbar-nav a.nav-link:focus {
 	color: #fff;
 }
 
-header a:hover {
-	background-color: #000;
+.navbar-dark .navbar-nav a.nav-link:hover {
 	color: #fff;
 	text-decoration: underline;
 }
 
-header a:active {
+.navbar-dark .navbar-nav a.nav-link:active {
 	color: #fff;
-	background-color: #000;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
 }
 
 #home {
@@ -130,25 +126,35 @@ h2 {
     margin-bottom: 40px;
 }
 
-form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px;
-    grid-gap: 30px;
-    opacity: .75;
-    margin: 20px;
-}
-
-textarea {
-    grid-column: 1 / -1;
-    margin-top: -30px;
-}
-
-form input:nth-of-type(4) {
-    width: 100px;
+form input{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: 50px;
-    margin-left: 82px;
-    
+    margin-bottom: 20px;
+    opacity: .75;
+}
+
+form textarea {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: .75;
+}
+
+#btn {
+    width: 44%;
+    margin-left: 25%;
+} 
+
+@media (min-width: 651px) {
+    .grid-form {
+        display: flex;
+    }
+    div.gr-btn{
+        max-width: 44%;
+        margin: auto;
+    }
 }
 
 #links :first-of-type {

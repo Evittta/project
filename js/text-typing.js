@@ -9,4 +9,4 @@ function writeText(id, text, speed){
     return false;
 };
     
-writeText("text-type", ["Evita Kusinya"]);
+writeText("text-type", ["Student at SoftServe IT Academy"]);
