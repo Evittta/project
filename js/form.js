@@ -21,7 +21,10 @@ function sendForm(e) {
         },5000);
     })
     .fail(function(){
-        $('#msg').html('Sorry, there is an error!');
+        $('#msg-er').html('Sorry, there is an error!');
+        setTimeout(function() {
+            $('#msg-er').fadeOut('fast')
+        },5000);
     });
 } 
 

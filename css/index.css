@@ -78,6 +78,10 @@ h2 {
     width: 100%;
 }
 
+#about-me h2 {
+    margin-top: 1px;
+}
+
 #education {
     background-image: url(../img/laptop.jpg);
     background-color: black;
@@ -154,7 +158,7 @@ form textarea {
     div.gr-btn{
         max-width: 44%;
         margin: auto;
-    }
+    } 
 }
 
 #links :first-of-type {
@@ -163,7 +167,7 @@ form textarea {
     margin-left: 18%;
 }
 
-#msg {
+#msg, #msg-er {
 	font-size: 20px;
 	color: white;
 	text-align: center;
